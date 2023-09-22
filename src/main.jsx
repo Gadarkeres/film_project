@@ -11,15 +11,15 @@ import Search from './pages/Search.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-   <BrowserRouter>
-   <Routes>
-  <Route element={ <App />}>
-    <Route path='/film_project/' element={<Home/>}/>
-    <Route path='film_project/movie/:id' element={<Movie/>}/>
-    <Route path='film_project/search' element={<Search/>}/>
-  </Route>
-   </Routes>
-   </BrowserRouter>
-  </React.StrictMode>,
+<React.StrictMode>
+  <BrowserRouter>
+    <Routes>
+      <Route path='/film_project' element={<App />}>
+        <Route path='/' element={<Home />} />
+        <Route path='/movie/:id' element={<Movie />} />
+        <Route path='/search' element={<Search />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
+</React.StrictMode>
 )
